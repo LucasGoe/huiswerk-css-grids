@@ -1,5 +1,5 @@
 /*Maak hier jouw CSS!*/
-
+/*Dit is de grid voor mobiel*/
 .container{
     background-color: beige;
     display: grid;
@@ -53,7 +53,7 @@
 /*styling hierbuiten wordt toegepast op desktop EN desktop en groter*/
 /*@media screen and (min-width: 768px)*/
 /*    !*styling toegepast op GROTER dan desktop*!*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     /*styling toegepast op GROTER dan mobiel*/
     /*dus tablets en web en beyond*/
     .container {
