@@ -50,10 +50,6 @@
     grid-area: footer;
 }
 
-/*styling hierbuiten wordt toegepast op desktop EN desktop en groter*/
-/*@media screen and (min-width: 768px)*/
-/*    !*styling toegepast op GROTER dan desktop*!*/
-
 @media screen and (min-width: 576px) {
     /*styling toegepast op GROTER dan mobiel*/
     /*dus tablets en web en beyond*/
