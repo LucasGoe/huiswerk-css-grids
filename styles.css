@@ -1,1 +1,104 @@
 /*Maak hier jouw CSS!*/
+
+.container{
+    background-color: beige;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+            "header"
+            "content"
+            "aside-big"
+            "aside-mini"
+            "aside-small"
+            "auto"
+            "footer";
+}
+
+.item {
+    background-color: firebrick;
+    border: 2px solid hsl(289, 13%, 32%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item-a {
+    grid-area: header;
+}
+
+#item-b {
+    grid-area: content;
+}
+
+#item-c {
+    grid-area:aside-big;
+}
+
+#item-d {
+    grid-area: aside-mini;
+}
+
+#item-e {
+    grid-area: aside-small;
+}
+
+#item-f {
+    grid-area: footer;
+}
+
+/*styling hierbuiten wordt toegepast op desktop EN desktop en groter*/
+/*@media screen and (min-width: 768px)*/
+/*    !*styling toegepast op GROTER dan desktop*!*/
+@media screen and (min-width: 992px) {
+    /*styling toegepast op GROTER dan mobiel*/
+    /*dus tablets en web en beyond*/
+    .container {
+        background-color: beige;
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+            "header aside-big aside-big"
+            "content aside-big aside-big"
+            "content aside-small aside-mini"
+            "content aside-small auto"
+            "footer footer footer";
+    }
+}
+
+/*styling hierbuiten wordt toegepast op mobiel EN mobiel en groter*/
+/*@media screen and (min-width: 576px) {
+    !*styling toegepast op GROTER dan mobiel*!
+    !*dus tablets en web en beyond*!
+    .container {
+        background-color: beige;
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+            "header aside-big aside-big"
+            "content aside-big aside-big"
+            "content aside-small aside-mini"
+            "content aside-small auto"
+            "footer footer footer";
+    }
+}*/
+/*@media screen and (min-width: 1024px)*/
+/*    !*styling toegepast op GROTER dan tablet*!*/
+/*}/
+ star 1
+
+
+
+
+
+
+
