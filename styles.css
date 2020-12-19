@@ -1,6 +1,6 @@
 /*Maak hier jouw CSS!*/
 /*Dit is de grid voor mobiel*/
-.container{
+.container {
     background-color: beige;
     display: grid;
     row-gap: 16px;
